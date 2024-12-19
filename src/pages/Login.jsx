@@ -27,7 +27,9 @@ const Login = () => {
         }
       } else {
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.message);
+    }
   };
   return (
     <form onSubmit={onSubmitHandler} className="min-h-[80vh] flex items-center">
